@@ -2,7 +2,8 @@
 	.container.half-padding-bottom
 		.navbar-header
 			%a.navbar-brand{:href=>"/"}
-				%img{:src=>"../images/logo.png", :width=>"146px"}
+				%img.hidden-xs{:src=>"../images/logo.png", :width=>"146"}
+				%img.visible-xs{:src=>"../images/mobile-logo.png"}
 			.visible-xs
 				.pull-right
 					%button.tcon.tcon-menu--xcross.menu-button{"aria-label" => "toggle menu", :type => "button", "aria-expanded" => "false", "data-target" => "#collapse-menu", "data-toggle" => "collapse"}
@@ -14,7 +15,7 @@
 				.navbar-right
 					%ul.nav.navbar-nav
 						%li
-							%a{:href=>"/"}
+							%a{:href=>"/features"}
 								Features
 						%li
 							%a{:href=>"/#"}
@@ -39,5 +40,5 @@
 					%a{:href=>"/#"}
 						Login
 				%li
-					%a{:href => "/#"}
+					%a.link-color{:href => "/#"}
 						Start Now

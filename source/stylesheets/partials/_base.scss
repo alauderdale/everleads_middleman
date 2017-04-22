@@ -25,6 +25,11 @@ body{
   font-family: proxima_nova_rgregular, "Helvetica", serif;
   background-color:white;
   padding-top:85px;
+
+  @include breakpoint(sm) {
+    padding-top:81px;
+  }
+
 }
 
 

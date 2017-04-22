@@ -29,7 +29,10 @@
 			float: none;
 			margin: 0 auto;
 			img {
-				width: 110px;
+				width: 164px;
+				position:relative;
+				top:-5px;
+				left:20px;
 			}
 		}
 
@@ -80,7 +83,7 @@
   }
   .menu-button{
   	padding-right: 20px;
-  	margin-top: 15px
+  	margin-top: 20px
   }
   //mobile nav
   .mobile-nav{
@@ -88,17 +91,25 @@
   	max-height: 100%;
 		text-align: center;
   	ul {
+  		margin-bottom: 30px;
+  		width: 100%;
   		li {
   			font-size: 1.4rem;
+  			width: 100%;
   			&.open{
   				a.dropdown-toggle{
   					display: none;
   				}
   			}
   			a {
-  				padding-top:15px !important;
-  				padding-bottom:15px !important;
+  				width: 100%;
+  				display: block;
+  				padding:8px 0px!important;
   				color: $header-text-color !important;
+  				width: 100%;
+  				&.link-color{
+  					color:$link-color!important;
+  				}
   				&.bold-link {
   					color: $navy-color !important;
   				}

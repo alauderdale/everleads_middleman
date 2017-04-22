@@ -1,5 +1,16 @@
 // typography baselines and @font face setups
 
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../font/proximanova-light-webfont.woff2') format('woff2'),
+         url('../font/proximanova-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 @font-face {
     font-family: 'proxima_nova_rgregular';
     src: url('../font/proximanova-regular-webfont.woff2') format('woff2'),
@@ -52,6 +63,10 @@
   color:$text-color;
 }
 
+.body-text-color{
+  color:$body-text-color;
+}
+
 .dark-text-color{
   color:$dark-text-color;
 }
@@ -69,7 +84,7 @@
 }
 
 .link-color{
-  color:$link-color;
+  color:$link-color!important;
 }
 
 .footer-color {
@@ -93,6 +108,10 @@
 
 .bold-font-name{
     font-family:$bold-font-name!important;
+}
+
+.light-font-name{
+  font-family: $light-font-name;
 }
 
 
@@ -178,7 +197,6 @@ h4 {
   font-size: 24px;
   letter-spacing: 0;
 }
-h5 {}
 h6 {
   font-size: 12px;
   letter-spacing: 0.86px;
@@ -195,6 +213,50 @@ p{
   .text-underline{
     padding-bottom:4px;
     border-bottom:1px solid $body-text-color;
+  }
+}
+
+
+.blockquote{
+  font-family: $light-font-name;
+  padding-left:0;
+  border:none!important;
+  margin-bottom: 0;
+  p{
+      &:before{
+      content: "\201c";
+      left: -7px;
+      position: absolute;
+      font-size:43px;
+      color: #999FA4;
+      top:16px;
+    }
+    &:after{
+      content: "\201d";
+      margin-left: 7px;
+      font-size:43px;
+      position:relative;
+      top:16px;
+      color: #999FA4;
+    }
+  }
+
+  @include breakpoint(sm) {
+    padding:20px;
+    p{
+      &:before{
+        left: 12px;
+        top:26px;
+      }
+      &:after{
+        margin-left: 0px;
+      }
+    }
+  }
+
+
+  .cite{
+    font-size: 13px;
   }
 }
 
