@@ -10,8 +10,18 @@
 	}
 
 .feature-panel.hidden-sm.hidden-xs
-	%p
-		Oh hoi
+	%a{:href=>"/"}
+		%img.contact-logo{:src=>"../images/contact-logo.png", :width=>"206"}
+	%h5.bold-font-name
+		IT’S AN OUTSTANDING PRODUCT. REALLY, IT IS!
+	- 3.times do
+		.point
+			%img.float-left{:src=>"../images/home-247-access.png", :width=>"32"}
+			%p.bold-font-name.no-margin-bottom
+				24 / 7 access
+			%p
+				%small
+					Donec nulla lorem, auctor at neque sed, feugiat gravida sapien. 
 .main-panel
 	.panel-inner
 		%section.contact-section.hero-header-lg{:style=>"background-image:url(../images/contact_bg.png);"}

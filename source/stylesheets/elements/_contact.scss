@@ -1,4 +1,5 @@
 .feature-panel{
+    padding:$baseline*1.5;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -15,9 +16,15 @@
     min-height: 600px;
     height: 100%;
     overflow: hidden;
-    background: black;
-        background-size: cover;
-    text-align: center;
+    background: #36424C;
+    background-size: cover;
+    @extend %white_text;
+    .contact-logo{
+        margin-bottom:80px;
+    }
+    h5{
+        margin-bottom:34px;
+    }
 }
 
 .main-panel{
