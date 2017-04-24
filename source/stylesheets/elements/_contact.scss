@@ -1,4 +1,4 @@
-img.contact-logo{
+img.contact-logo-mobile{
     margin-bottom: $baseline!important;
 }
 
@@ -25,7 +25,7 @@ img.contact-logo{
     background-size: cover;
     @extend %white_text;
     .contact-logo{
-        margin-bottom:86px;
+        margin-bottom:106px;
     }
     h5{
         margin-bottom:34px;
@@ -42,9 +42,9 @@ img.contact-logo{
         p{
             padding-right:$baseline*1.5;
             &.quote-text{
-                font-size: 15px;
+                font-size: 18px;
                 font-family: $regular-font-name;
-                line-height: 20px;
+                line-height: 23px;
                 font-style: italic;
             }
         }
