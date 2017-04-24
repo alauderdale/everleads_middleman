@@ -11,7 +11,7 @@
 
 .feature-panel.hidden-sm.hidden-xs
 	%a{:href=>"/"}
-		%img.contact-logo{:src=>"../images/contact-logo.png", :width=>"206"}
+		%img.contact-logo{:src=>"../images/contact-logo.png", :width=>"176"}
 	%h5.bold-font-name
 		IT’S AN OUTSTANDING PRODUCT. REALLY, IT IS!
 	- 3.times do
@@ -29,38 +29,39 @@
 			John Importantguy, CEO of BIG DATA GROUP, LLC 
 .main-panel
 	.panel-inner
-		%a{:href=>"/"}
-			%img.visible-xs.margin-auto.no-margin-bottom{:src=>"../images/mobile-logo.png", :width=>"200"}
 		%section.contact-section.hero-header-lg{:style=>"background-image:url(../images/contact_bg.png);"}
+			%a{:href=>"/"}
+				%img.visible-xs.visible-sm.margin-auto.contact-logo{:src=>"../images/mobile-logo.png", :width=>"170"}
 			.container-fluid
 				.row
 					.col-md-2
 					.col-md-8
 						%h2.text-center
-							We can’t wait to help you
+							We can’t wait to help you!
 						%p.text-center.margin-bottom
 							Fill out the form below and we’ll respond within 24hrs
-						%form
-							.row
-								.col-md-12
-									.form-group
-										%input.form-control.input-lg{:type=>"text", :placeholder=>"Name"}
-								.col-md-12
-									.form-group
-										%input.form-control.input-lg{:type=>"text", :placeholder=>"Company"}
-								.col-md-12
-									.form-group
-										%input.form-control.input-lg{:type=>"text", :placeholder=>"Email"}
-								.col-md-12
-									.form-group
-										%input.form-control.input-lg{:type=>"text", :placeholder=>"Phone"}
-								.col-md-12
-									.form-group
-										%textarea.form-control.input-lg{:rows=>"3" , :placeholder=>"Tell us more. What are your needs?"}
-								.col-md-12.half-margin-top
-									.text-center
-										%button.btn-primary.btn.btn-lg.btn-strech{:type=>"submit"}
-											Send message
+						.padding-left.padding-right
+							%form
+								.row
+									.col-md-12
+										.form-group
+											%input.form-control.input-lg{:type=>"text", :placeholder=>"Name"}
+									.col-md-12
+										.form-group
+											%input.form-control.input-lg{:type=>"text", :placeholder=>"Company"}
+									.col-md-12
+										.form-group
+											%input.form-control.input-lg{:type=>"text", :placeholder=>"Email"}
+									.col-md-12
+										.form-group
+											%input.form-control.input-lg{:type=>"text", :placeholder=>"Phone"}
+									.col-md-12
+										.form-group
+											%textarea.form-control.input-lg{:rows=>"3" , :placeholder=>"Tell us more. What are your needs?"}
+									.col-md-12.half-margin-top
+										.text-center
+											%button.btn-primary.btn.btn-lg.btn-strech{:type=>"submit"}
+												Send message
 						.text-center.double-margin-top
 							%h6.bold-font-name
 								GENERAL COMMUNICATION

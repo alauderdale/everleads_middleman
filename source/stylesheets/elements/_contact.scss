@@ -1,3 +1,8 @@
+img.contact-logo{
+    margin-bottom: $baseline!important;
+}
+
+
 .feature-panel{
     padding:$baseline*1.5;
     -webkit-box-align: center;
@@ -54,8 +59,14 @@
     overflow: auto;
     margin-left: 460px;
     position:relative;
+        h2{
+            line-height: 1.1em;
+        }
 	@include breakpoint(md) {
 		margin-left:0;
+        h2{
+            font-size: 30px;
+        }
 	}
 	.panel-inner{
 		display: table;
