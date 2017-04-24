@@ -14,7 +14,9 @@
 	.container
 		.row
 			.col-sm-5.col-sm-push-7
-				.company-images
+				.visible-xs
+					%img.max-width{:src=>"../images/company-grid-mobile.png", :width=>"291", "data-rellax-speed"=>"-.3"}
+				.company-images.hidden-xs
 					.inner
 						//pink
 						%img.img-two.rellax{:src=>"../images/about-image-two.png", :width=>"291", "data-rellax-speed"=>"-.3"}
