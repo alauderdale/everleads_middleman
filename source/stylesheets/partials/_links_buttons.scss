@@ -56,6 +56,10 @@
 
 li a, a {
 	color: $primary-color;
+	&:hover{
+		text-decoration: none;
+		color: shade($primary-color,20%)
+	}
 }
 
 
